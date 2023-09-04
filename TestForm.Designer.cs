@@ -31,23 +31,23 @@
             this.PortNumber = new System.Windows.Forms.ComboBox();
             this.conn_btn = new System.Windows.Forms.Button();
             this.textArea = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox_conn = new System.Windows.Forms.GroupBox();
+            this.groupBox_LED = new System.Windows.Forms.GroupBox();
+            this.Led_Off_btn = new System.Windows.Forms.Button();
+            this.Led_On_btn = new System.Windows.Forms.Button();
+            this.groupBox_log = new System.Windows.Forms.GroupBox();
+            this.groupBox_tmp_sns = new System.Windows.Forms.GroupBox();
             this.TempBox = new System.Windows.Forms.TextBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox_light_sns = new System.Windows.Forms.GroupBox();
             this.sunText = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.groupBox_us_sns = new System.Windows.Forms.GroupBox();
             this.US_Text = new System.Windows.Forms.TextBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.groupBox_conn.SuspendLayout();
+            this.groupBox_LED.SuspendLayout();
+            this.groupBox_log.SuspendLayout();
+            this.groupBox_tmp_sns.SuspendLayout();
+            this.groupBox_light_sns.SuspendLayout();
+            this.groupBox_us_sns.SuspendLayout();
             this.SuspendLayout();
             // 
             // PortNumber
@@ -97,69 +97,69 @@
             this.textArea.Text = "💜_💜\r\n";
             this.textArea.TextChanged += new System.EventHandler(this.textArea_TextChanged);
             // 
-            // groupBox1
+            // groupBox_conn
             // 
-            this.groupBox1.Controls.Add(this.conn_btn);
-            this.groupBox1.Controls.Add(this.PortNumber);
-            this.groupBox1.Location = new System.Drawing.Point(24, 31);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 55);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.groupBox_conn.Controls.Add(this.conn_btn);
+            this.groupBox_conn.Controls.Add(this.PortNumber);
+            this.groupBox_conn.Location = new System.Drawing.Point(24, 31);
+            this.groupBox_conn.Name = "groupBox_conn";
+            this.groupBox_conn.Size = new System.Drawing.Size(200, 55);
+            this.groupBox_conn.TabIndex = 3;
+            this.groupBox_conn.TabStop = false;
+            this.groupBox_conn.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // groupBox2
+            // groupBox_LED
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Location = new System.Drawing.Point(24, 102);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 100);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "LED Controller";
+            this.groupBox_LED.Controls.Add(this.Led_Off_btn);
+            this.groupBox_LED.Controls.Add(this.Led_On_btn);
+            this.groupBox_LED.Location = new System.Drawing.Point(24, 102);
+            this.groupBox_LED.Name = "groupBox_LED";
+            this.groupBox_LED.Size = new System.Drawing.Size(200, 100);
+            this.groupBox_LED.TabIndex = 4;
+            this.groupBox_LED.TabStop = false;
+            this.groupBox_LED.Text = "LED Controller";
             // 
-            // button2
+            // Led_Off_btn
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(141)))));
-            this.button2.Location = new System.Drawing.Point(114, 31);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 60);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "OFF";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Led_Off_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(141)))));
+            this.Led_Off_btn.Location = new System.Drawing.Point(114, 31);
+            this.Led_Off_btn.Name = "Led_Off_btn";
+            this.Led_Off_btn.Size = new System.Drawing.Size(80, 60);
+            this.Led_Off_btn.TabIndex = 1;
+            this.Led_Off_btn.Text = "OFF";
+            this.Led_Off_btn.UseVisualStyleBackColor = false;
+            this.Led_Off_btn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button1
+            // Led_On_btn
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(141)))));
-            this.button1.Location = new System.Drawing.Point(6, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 60);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "ON";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Led_On_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(239)))), ((int)(((byte)(141)))));
+            this.Led_On_btn.Location = new System.Drawing.Point(6, 31);
+            this.Led_On_btn.Name = "Led_On_btn";
+            this.Led_On_btn.Size = new System.Drawing.Size(80, 60);
+            this.Led_On_btn.TabIndex = 0;
+            this.Led_On_btn.Text = "ON";
+            this.Led_On_btn.UseVisualStyleBackColor = false;
+            this.Led_On_btn.Click += new System.EventHandler(this.button1_Click);
             // 
-            // groupBox3
+            // groupBox_log
             // 
-            this.groupBox3.Controls.Add(this.textArea);
-            this.groupBox3.Location = new System.Drawing.Point(242, 31);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(248, 364);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Event Log";
+            this.groupBox_log.Controls.Add(this.textArea);
+            this.groupBox_log.Location = new System.Drawing.Point(242, 31);
+            this.groupBox_log.Name = "groupBox_log";
+            this.groupBox_log.Size = new System.Drawing.Size(248, 364);
+            this.groupBox_log.TabIndex = 5;
+            this.groupBox_log.TabStop = false;
+            this.groupBox_log.Text = "Event Log";
             // 
-            // groupBox4
+            // groupBox_tmp_sns
             // 
-            this.groupBox4.Controls.Add(this.TempBox);
-            this.groupBox4.Location = new System.Drawing.Point(24, 225);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(200, 52);
-            this.groupBox4.TabIndex = 6;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Temperature Sensor";
+            this.groupBox_tmp_sns.Controls.Add(this.TempBox);
+            this.groupBox_tmp_sns.Location = new System.Drawing.Point(24, 225);
+            this.groupBox_tmp_sns.Name = "groupBox_tmp_sns";
+            this.groupBox_tmp_sns.Size = new System.Drawing.Size(200, 52);
+            this.groupBox_tmp_sns.TabIndex = 6;
+            this.groupBox_tmp_sns.TabStop = false;
+            this.groupBox_tmp_sns.Text = "Temperature Sensor";
             // 
             // TempBox
             // 
@@ -174,15 +174,15 @@
             this.TempBox.Text = "온도";
             this.TempBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // groupBox5
+            // groupBox_light_sns
             // 
-            this.groupBox5.Controls.Add(this.sunText);
-            this.groupBox5.Location = new System.Drawing.Point(24, 283);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(200, 54);
-            this.groupBox5.TabIndex = 7;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Light Sensor";
+            this.groupBox_light_sns.Controls.Add(this.sunText);
+            this.groupBox_light_sns.Location = new System.Drawing.Point(24, 283);
+            this.groupBox_light_sns.Name = "groupBox_light_sns";
+            this.groupBox_light_sns.Size = new System.Drawing.Size(200, 54);
+            this.groupBox_light_sns.TabIndex = 7;
+            this.groupBox_light_sns.TabStop = false;
+            this.groupBox_light_sns.Text = "Light Sensor";
             // 
             // sunText
             // 
@@ -197,15 +197,15 @@
             this.sunText.Text = "조도";
             this.sunText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // groupBox6
+            // groupBox_us_sns
             // 
-            this.groupBox6.Controls.Add(this.US_Text);
-            this.groupBox6.Location = new System.Drawing.Point(24, 343);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(200, 52);
-            this.groupBox6.TabIndex = 8;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Ultrasonic Sensor";
+            this.groupBox_us_sns.Controls.Add(this.US_Text);
+            this.groupBox_us_sns.Location = new System.Drawing.Point(24, 343);
+            this.groupBox_us_sns.Name = "groupBox_us_sns";
+            this.groupBox_us_sns.Size = new System.Drawing.Size(200, 52);
+            this.groupBox_us_sns.TabIndex = 8;
+            this.groupBox_us_sns.TabStop = false;
+            this.groupBox_us_sns.Text = "Ultrasonic Sensor";
             // 
             // US_Text
             // 
@@ -227,26 +227,26 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(151)))), ((int)(((byte)(221)))));
             this.ClientSize = new System.Drawing.Size(512, 428);
-            this.Controls.Add(this.groupBox6);
-            this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBox_us_sns);
+            this.Controls.Add(this.groupBox_light_sns);
+            this.Controls.Add(this.groupBox_tmp_sns);
+            this.Controls.Add(this.groupBox_log);
+            this.Controls.Add(this.groupBox_LED);
+            this.Controls.Add(this.groupBox_conn);
             this.Name = "winform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = ">_<";
             this.Load += new System.EventHandler(this.winform_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.groupBox_conn.ResumeLayout(false);
+            this.groupBox_LED.ResumeLayout(false);
+            this.groupBox_log.ResumeLayout(false);
+            this.groupBox_log.PerformLayout();
+            this.groupBox_tmp_sns.ResumeLayout(false);
+            this.groupBox_tmp_sns.PerformLayout();
+            this.groupBox_light_sns.ResumeLayout(false);
+            this.groupBox_light_sns.PerformLayout();
+            this.groupBox_us_sns.ResumeLayout(false);
+            this.groupBox_us_sns.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -256,16 +256,16 @@
         private System.Windows.Forms.ComboBox PortNumber;
         private System.Windows.Forms.Button conn_btn;
         private System.Windows.Forms.TextBox textArea;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox_conn;
+        private System.Windows.Forms.GroupBox groupBox_LED;
+        private System.Windows.Forms.Button Led_Off_btn;
+        private System.Windows.Forms.Button Led_On_btn;
+        private System.Windows.Forms.GroupBox groupBox_log;
+        private System.Windows.Forms.GroupBox groupBox_tmp_sns;
         private System.Windows.Forms.TextBox TempBox;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox_light_sns;
         private System.Windows.Forms.TextBox sunText;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox groupBox_us_sns;
         private System.Windows.Forms.TextBox US_Text;
     }
 }
